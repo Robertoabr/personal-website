@@ -3,21 +3,27 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {logout} from '../store'
+import {Container, Menu} from 'semantic-ui-react'
 
-const Navbar = ({handleClick}) => (
+//in line styles
+
+const navStyle = {
+  position: 'fixed',
+  top: '0',
+  width: '100%'
+}
+
+//component
+
+const Navbar = () => (
   <div>
-    <h1>Roberto's Website!</h1>
-    <nav>
-      {
-        <div>
-          {/* The navbar will show these links after you log in */}
-          <Link to="/home">Home</Link>
-          <a href="#" onClick={handleClick}>
-            Logout
-          </a>
-        </div>
-      }
-    </nav>
+    <Container style={navStyle}>
+      <Menu>
+        <Menu.Item>About</Menu.Item>
+        <Menu.Item>Projects</Menu.Item>
+        <Menu.Item>Writing</Menu.Item>
+      </Menu>
+    </Container>
     <hr />
   </div>
 )
@@ -25,11 +31,6 @@ const Navbar = ({handleClick}) => (
 /**
  * CONTAINER
  */
-const mapState = state => {
-  return {
-    isLoggedIn: !!state.user.id
-  }
-}
 
 const mapDispatch = dispatch => {
   return {
@@ -39,7 +40,7 @@ const mapDispatch = dispatch => {
   }
 }
 
-export default connect(mapState, mapDispatch)(Navbar)
+export default connect(null, mapDispatch)(Navbar)
 
 /**
  * PROP TYPES
