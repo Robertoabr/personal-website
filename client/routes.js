@@ -2,7 +2,8 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {withRouter, Route, Switch} from 'react-router-dom'
 import PropTypes from 'prop-types'
-import {UserHome, Home} from './components'
+import {Home, LandingPage, Navbar} from './components'
+
 import {me} from './store'
 
 /**
@@ -15,10 +16,11 @@ class Routes extends Component {
 
   render() {
     return (
-      <Switch>
-        <Route path="/home" component={UserHome} />
-        <Route path="/" component={Home} />
-      </Switch>
+      <div>
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/home" component={Navbar} />
+        <Route exact path="/" component={LandingPage} />
+      </div>
     )
   }
 }
