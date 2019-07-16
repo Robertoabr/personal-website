@@ -9,10 +9,8 @@ export default class Navigation extends Component {
 
   render() {
     return (
-      <Navbar sticky="top" bg="light" expand="md">
-        <Navbar.Brand id="RB" href="#home">
-          RB
-        </Navbar.Brand>
+      <Navbar id="rbnav" sticky="top" bg="dark" variant="dark" expand="md">
+        <Navbar.Brand id="RB">RB</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">

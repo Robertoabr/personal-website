@@ -22,10 +22,25 @@ body {
   align-items: center;
 }
 
-.Navbar {
-  height: 1vh;
+.navbar {
+  height: 7vh;
+  min-height: 4em;
+  /* background-color: rgb(214, 218, 240) !important; */
+  border-bottom: 0.2em solid #007bff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: whitesmoke;
+}
+
+.navbar-toggler-icon {
+  padding: 0;
 }
 
 #RB {
   font-family: 'Patrick Hand', cursive;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  line-height: 1;
 }
