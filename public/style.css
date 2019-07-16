@@ -2,21 +2,30 @@ body {
   font-family: sans-serif;
 }
 
-a {
-  text-decoration: none;
+.jumbotron {
+  min-height: 100vh;
+  background-image: url('./images/HeroImage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
 }
 
-label {
-  display: block;
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-nav a {
-  display: inline-block;
-  margin: 1em;
-  color: blueviolet;
+.Navbar {
+  height: 1vh;
 }
 
-form div {
-  margin: 1em;
-  display: inline-block;
+#RB {
+  font-family: 'Patrick Hand', cursive;
 }

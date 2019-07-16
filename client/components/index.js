@@ -5,5 +5,4 @@
  */
 export {default as Navbar} from './navbar'
 export {default as UserHome} from './user-home'
-export {default as Home} from './home'
-export {default as LandingPage} from './landingPage'
+export {default as Jumbo} from './jumbo'
