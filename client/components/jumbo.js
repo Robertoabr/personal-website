@@ -6,9 +6,13 @@ const Jumbo = () => {
   return (
     <Jumbotron fluid>
       <div className="intro">
-        <h2>Hello, I am Roberto Brillembourg.</h2>
-        <h2>I'm a full-stack web developer.</h2>
-        <Button>View my work</Button>
+        <h2>
+          Hello, I'm <span id="fullname">Roberto Brillembourg</span>.
+        </h2>
+        <h2>I am a full-stack web developer.</h2>
+        <Button id="viewmyworkbutton" variant="outline-primary">
+          View my work
+        </Button>
       </div>
     </Jumbotron>
   )

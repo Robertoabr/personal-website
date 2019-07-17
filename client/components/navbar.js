@@ -9,12 +9,13 @@ export default class Navigation extends Component {
 
   render() {
     return (
-      <Navbar id="rbnav" sticky="top" bg="dark" variant="dark" expand="md">
-        <Navbar.Brand id="RB">RB</Navbar.Brand>
+      <Navbar id="rbnav" sticky="top" bg="dark" variant="dark" expand="sm">
+        <Navbar.Brand id="RB" href="#home">
+          RB
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#About">About</Nav.Link>
             <Nav.Link href="#Projects">Projects</Nav.Link>
             <Nav.Link href="#Blog">Blog</Nav.Link>

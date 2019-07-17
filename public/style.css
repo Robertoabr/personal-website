@@ -2,6 +2,10 @@ body {
   font-family: sans-serif;
 }
 
+p {
+  font-size: min(calc(12px + 1vmin), 3vmin);
+}
+
 .jumbotron {
   min-height: 100vh;
   background-image: url('./images/HeroImage.jpg');
@@ -15,6 +19,14 @@ body {
   margin-bottom: 0;
 }
 
+.jumbotron h2 {
+  font-size: 6vmin;
+}
+
+.jumbotron .button {
+  font-size: 6vmin;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -23,10 +35,11 @@ body {
 }
 
 .navbar {
-  height: 7vh;
   min-height: 4em;
-  /* background-color: rgb(214, 218, 240) !important; */
-  border-bottom: 0.2em solid #007bff;
+}
+
+#rbnav {
+  border-bottom: 0.1em solid #007bff;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -40,7 +53,90 @@ body {
 #RB {
   font-family: 'Patrick Hand', cursive;
   border-style: solid;
-  border-width: 1px;
-  padding: 5px;
+  border-width: 0.07em;
+  padding: 0.25em;
   line-height: 1;
+}
+
+#fullname {
+  color: rgb(196, 36, 71);
+}
+
+#viewmyworkbutton {
+  font-size: 3vmin;
+  border-width: 0.09em;
+}
+
+#aboutSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 93.5vh;
+}
+
+#projectsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 2em; */
+  min-height: 100vh;
+  background-color: #007bff;
+}
+
+#projects {
+  margin: 5vh;
+  margin-top: 15vh;
+  border-bottom: 0.13em solid white;
+  font-size: 4vmin;
+  color: white;
+}
+
+#architecture {
+  margin: 2em;
+}
+
+#about {
+  margin: 5vh;
+  margin-top: 10vh;
+  border-bottom: 0.13em solid black;
+  font-size: 4vmin;
+}
+
+#aboutbanner {
+  background-color: #007bff;
+  color: white;
+  padding: 0.35em;
+  text-align: center;
+}
+
+.h1,
+h1 {
+  font-size: calc(16px + 3vmin);
+}
+
+#photoRow {
+  flex-direction: column;
+  align-items: center;
+}
+
+#rbcard p {
+  font-size: calc(2vw + 6px);
+}
+
+@media (max-width: 768px) {
+  #rbcard {
+    border: none;
+  }
+}
+
+@media (min-width: 991px) {
+  #rbcard p {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 991px) {
+  #rbcard img {
+    min-height: 100%;
+  }
 }
