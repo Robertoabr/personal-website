@@ -21,6 +21,8 @@ p {
 
 .jumbotron h2 {
   font-size: 6vmin;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .jumbotron .button {
@@ -39,7 +41,7 @@ p {
 }
 
 #rbnav {
-  border-bottom: 0.1em solid #007bff;
+  border-bottom: 0.1em solid rgba(255, 159, 28, 1);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -59,7 +61,7 @@ p {
 }
 
 #fullname {
-  color: rgb(196, 36, 71);
+  color: rgba(255, 159, 28, 1);
 }
 
 #viewmyworkbutton {
@@ -72,6 +74,14 @@ p {
   flex-direction: column;
   align-items: center;
   min-height: 93.5vh;
+  color: rgba(94, 94, 94, 1);
+}
+
+#about {
+  margin: 5vh;
+  margin-top: 10vh;
+  border-bottom: 0.13em solid rgba(94, 94, 94, 1);
+  font-size: 4vmin;
 }
 
 #projectsSection {
@@ -80,33 +90,24 @@ p {
   align-items: center;
   /* margin-top: 2em; */
   min-height: 100vh;
-  background-color: #007bff;
+  background-color: rgba(36, 36, 36, 1);
+  color: rgba(94, 94, 94, 1);
 }
 
-#projects {
+#projectsHead {
   margin: 5vh;
   margin-top: 15vh;
-  border-bottom: 0.13em solid white;
+  border-bottom: 0.13em solid rgba(255, 159, 28, 1);
   font-size: 4vmin;
-  color: white;
+  color: rgba(255, 159, 28, 1);
+}
+
+.projCard {
+  border: 0.1em solid rgba(94, 94, 94, 1);
 }
 
 #architecture {
   margin: 2em;
-}
-
-#about {
-  margin: 5vh;
-  margin-top: 10vh;
-  border-bottom: 0.13em solid black;
-  font-size: 4vmin;
-}
-
-#aboutbanner {
-  background-color: #007bff;
-  color: white;
-  padding: 0.35em;
-  text-align: center;
 }
 
 .h1,
@@ -119,8 +120,22 @@ h1 {
   align-items: center;
 }
 
+#rbcard {
+  border: 0.032em solid rgba(255, 159, 28, 0.4);
+}
+
 #rbcard p {
   font-size: calc(2vw + 6px);
+}
+
+#rbcard h4 {
+  font-size: calc(2vw + 8px);
+}
+
+.card-img-top {
+  object-fit: cover;
+  object-position: left top;
+  height: 10rem;
 }
 
 @media (max-width: 768px) {
@@ -132,6 +147,9 @@ h1 {
 @media (min-width: 991px) {
   #rbcard p {
     font-size: 24px;
+  }
+  #rbcard h4 {
+    font-size: 28px;
   }
 }
 

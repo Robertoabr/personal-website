@@ -10,13 +10,21 @@ const About = () => {
       className="d-flex flex-column align-items-center"
     >
       <div id="about">
-        <h1 className=" m-8">About</h1>
+        <h1 className="m-8">ABOUT</h1>
       </div>
       <div className="m-3">
-        <div id="rbcard" className="card mb-3" style={{maxWidth: '140vmin'}}>
+        <Card id="rbcard" className="mb-3" style={{maxWidth: '140vmin'}}>
           <div className="row no-gutters">
             <div className="col-lg-4">
-              <img fluid src="images/roberto2.png" className="card-img" />
+              <img
+                fluid
+                src="images/roberto2.png"
+                className="card-img"
+                style={{
+                  objectFit: 'cover',
+                  objectPosition: 'left'
+                }}
+              />
             </div>
             <div className="col-lg-8">
               <div className="card-body">
@@ -40,7 +48,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Card>
       </div>
     </Container>
   )

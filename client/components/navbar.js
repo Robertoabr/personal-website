@@ -16,9 +16,9 @@ export default class Navigation extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#About">About</Nav.Link>
-            <Nav.Link href="#Projects">Projects</Nav.Link>
-            <Nav.Link href="#Blog">Blog</Nav.Link>
+            <Nav.Link href="#About">ABOUT</Nav.Link>
+            <Nav.Link href="#Projects">PROJECTS</Nav.Link>
+            <Nav.Link href="#Blog">WRITING</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

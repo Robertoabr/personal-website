@@ -10,7 +10,11 @@ const Jumbo = () => {
           Hello, I'm <span id="fullname">Roberto Brillembourg</span>.
         </h2>
         <h2>I am a full-stack web developer.</h2>
-        <Button id="viewmyworkbutton" variant="outline-primary">
+        <Button
+          className="mt-4"
+          id="viewmyworkbutton"
+          variant="outline-primary"
+        >
           View my work
         </Button>
       </div>
