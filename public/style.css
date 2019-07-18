@@ -179,7 +179,7 @@ h1 {
   grid-template: 1fr / 1fr;
   grid-template-areas: 'frontAndBack';
   transform-style: preserve-3d;
-  transition: all 0.7s ease;
+  transition: all 0.9s ease;
 }
 
 .card-flip div {
@@ -196,6 +196,10 @@ h1 {
   transform: rotateY(-180deg);
 }
 
-.card-container:hover .card-flip {
+.card-flip-manual {
   transform: rotateY(180deg);
 }
+
+/* .card-container:hover .card-flip {
+  transform: rotateY(180deg);
+} */
