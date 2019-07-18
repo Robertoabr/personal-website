@@ -6,10 +6,6 @@ body {
   font-family: sans-serif;
 }
 
-p {
-  font-size: min(calc(12px + 1vmin), 3vmin);
-}
-
 .jumbotron {
   min-height: 100vh;
   background-image: url('./images/HeroImage.jpg');
@@ -139,21 +135,49 @@ h1 {
   font-size: calc(2vw + 8px);
 }
 
-.card-img-top {
+.card-img-top.frontImage {
   object-fit: cover;
   object-position: center;
-  height: 15rem;
+  height: 40vmin;
 }
 
-@media (max-width: 768px) {
+.card-img-top.backImage {
+  object-fit: cover;
+  object-position: center;
+  height: 30vmin;
+}
+
+/* min font size & scaling  */
+.front .card-text {
+  font-size: calc(2vw + 6px);
+  overflow-wrap: break-word;
+}
+
+/* min font size & scaling  */
+.back .card-text {
+  font-size: calc(1.5vw + 10px);
+  overflow-wrap: break-word;
+}
+
+/* behavior for xs+sm screens */
+@media (max-width: 576px) {
   #rbcard {
     border: none;
   }
+  .back .card-img-top {
+    display: none;
+  }
+
+  /* .back .card-text {
+    font-size: 14px;
+  } */
+
   html {
     scroll-behavior: auto;
   }
 }
 
+/* max sizes for large+ screens */
 @media (min-width: 991px) {
   #rbcard p {
     font-size: 24px;
@@ -161,9 +185,16 @@ h1 {
   #rbcard h4 {
     font-size: 28px;
   }
-}
+  .front .card-text {
+    font-size: 24px;
+  }
+  .front .card-title {
+    font-size: 28px;
+  }
+  .back .card-text {
+    font-size: 18px;
+  }
 
-@media (min-width: 991px) {
   #rbcard img {
     min-height: 100%;
   }
@@ -172,6 +203,7 @@ h1 {
 .card-container {
   display: grid;
   perspective: 700px;
+  max-width: 100%;
 }
 
 .card-flip {
@@ -180,6 +212,7 @@ h1 {
   grid-template-areas: 'frontAndBack';
   transform-style: preserve-3d;
   transition: all 0.9s ease;
+  max-width: 100%;
 }
 
 .card-flip div {
@@ -189,17 +222,15 @@ h1 {
 
 .front {
   grid-area: frontAndBack;
+  max-width: 100%;
 }
 
 .back {
   grid-area: frontAndBack;
   transform: rotateY(-180deg);
+  max-width: 100%;
 }
 
 .card-flip-manual {
   transform: rotateY(180deg);
 }
-
-/* .card-container:hover .card-flip {
-  transform: rotateY(180deg);
-} */

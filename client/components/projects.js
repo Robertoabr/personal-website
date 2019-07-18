@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import ProjectCard from './projectCard'
 
 class Projects extends Component {
   constructor(props) {
@@ -26,74 +27,25 @@ class Projects extends Component {
   render() {
     return (
       <section id="projects">
-        <div fluid className="d-flex flex-column align-items-center m-0">
+        <div className="container-fluid d-flex flex-column align-items-center m-1">
           <div id="projectsHead">
             <h1 className=" m-8">PROJECTS</h1>
           </div>
           <Container>
             <Row>
-              <Col sm={6} className="mb-5">
-                <div className="card-container">
-                  <div
-                    className={`card-flip ${
-                      this.state.card1 ? 'card-flip-manual' : ''
-                    }`}
-                  >
-                    <div className="front">
-                      <Card className="projCard">
-                        <Card.Img variant="top" src="images/Guitar.jpg" />
-                        <Card.Body>
-                          <Card.Title>GrungeCart</Card.Title>
-                          <Card.Text>
-                            Fully functional E-commerce web app that helps sell
-                            retro music to aspiring hipsters.
-                          </Card.Text>
-                          <Button
-                            variant="outline-primary"
-                            onClick={() => this.onClickFlipCard('card1')}
-                          >
-                            Go somewhere
-                          </Button>
-                        </Card.Body>
-                      </Card>
-                    </div>
-                    <div className="back">
-                      <Card className="projCard">
-                        <Card.Img variant="top" src="images/Guitar.jpg" />
-                        <Card.Body>
-                          <Card.Title>BACK</Card.Title>
-                          <Card.Text>
-                            BACK text
-                            gsgsdkgsdgsdgsdgsdgsdgdsgsdgdsgsdgdsgsdgdsgsdgsdgsg
-                          </Card.Text>
-                          <Button
-                            variant="outline-primary"
-                            onClick={() => this.onClickFlipCard('card1')}
-                          >
-                            Go back
-                          </Button>
-                        </Card.Body>
-                      </Card>
-                    </div>
-                  </div>
-                </div>
+              <Col lg={6} className="mb-4">
+                <ProjectCard />
               </Col>
-              <Col sm={6} className="mb-5">
-                <Card className="projCard">
-                  <Card.Img variant="top" src="images/ARtajmahal.jpg" />
-                  <Card.Body>
-                    <Card.Title>ExplorAR</Card.Title>
-                    <Card.Text>
-                      Tourism app which brings history to life through location
-                      based augmented reality
-                    </Card.Text>
-                    <Button variant="outline-primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
+              <Col lg={6} className="mb-4">
+                <ProjectCard />
               </Col>
-              <Col sm={6} className="mb-5">
+              <Col lg={6} className="mb-4">
                 <Card className="projCard">
-                  <Card.Img variant="top" src="images/computerVision.png" />
+                  <Card.Img
+                    className="frontImage"
+                    variant="top"
+                    src="images/computerVision.png"
+                  />
                   <Card.Body>
                     <Card.Title>EyeTicTacToe</Card.Title>
                     <Card.Text>
@@ -104,9 +56,13 @@ class Projects extends Component {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col sm={6} className="mb-5">
+              <Col lg={6} className="mb-4">
                 <Card className="projCard">
-                  <Card.Img variant="top" src="images/vr1.jpg" />
+                  <Card.Img
+                    variant="top"
+                    className="frontImage"
+                    src="images/vr1.jpg"
+                  />
                   <Card.Body>
                     <Card.Title>Ethan and the Gentle Giant</Card.Title>
                     <Card.Text>
