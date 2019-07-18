@@ -1,7 +1,7 @@
 {
   "name": "roberto-personal-website",
   "version": "2.0.0",
-  "description": "Some boilerplate code to get you started - get shakin'!",
+  "description": "Roberto Brillembourg portfolio site",
   "engines": {
     "node": ">= 7.0.0"
   },
@@ -38,7 +38,7 @@
       "git add"
     ]
   },
-  "author": "Fullstack Academy of Code",
+  "author": "Roberto Brillembourg",
   "license": "MIT",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.9.0",

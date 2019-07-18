@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -75,16 +79,20 @@ p {
   align-items: center;
   min-height: 93.5vh;
   color: rgba(94, 94, 94, 1);
+  background-image: url('./images/whitePattern.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-#about {
+#aboutHeader {
   margin: 5vh;
-  margin-top: 10vh;
+  margin-top: 17vh;
   border-bottom: 0.13em solid rgba(94, 94, 94, 1);
-  font-size: 4vmin;
+  font-size: calc(16px + 3vmin);
 }
 
-#projectsSection {
+#projects {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,10 +103,9 @@ p {
 }
 
 #projectsHead {
-  margin: 5vh;
-  margin-top: 15vh;
+  margin: 6vh;
+  margin-top: 14vh;
   border-bottom: 0.13em solid rgba(255, 159, 28, 1);
-  font-size: 4vmin;
   color: rgba(255, 159, 28, 1);
 }
 
@@ -134,13 +141,16 @@ h1 {
 
 .card-img-top {
   object-fit: cover;
-  object-position: left top;
-  height: 10rem;
+  object-position: center;
+  height: 15rem;
 }
 
 @media (max-width: 768px) {
   #rbcard {
     border: none;
+  }
+  html {
+    scroll-behavior: auto;
   }
 }
 
@@ -157,4 +167,35 @@ h1 {
   #rbcard img {
     min-height: 100%;
   }
+}
+
+.card-container {
+  display: grid;
+  perspective: 700px;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: 'frontAndBack';
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
 }
