@@ -1,0 +1,114 @@
+import React, {Component} from 'react'
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
+
+export default class ExplorAR extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      flipped: false
+    }
+    this.onClickFlipCard = this.onClickFlipCard.bind(this)
+  }
+
+  onClickFlipCard(id) {
+    let newState = {}
+    newState[id] = !this.state[id]
+    this.setState(newState)
+  }
+
+  render() {
+    return (
+      <div className="card-container">
+        <div
+          className={`card-flip ${
+            this.state.flipped ? 'card-flip-manual' : ''
+          }`}
+        >
+          <div className="front">
+            <Card className="projCard">
+              <Card.Img
+                className="frontImage"
+                variant="top"
+                src="images/ARtajmahal.jpg"
+              />
+              <Card.Body className="rbflipbody">
+                <Card.Title>ExplorAR</Card.Title>
+                <Card.Text>
+                  Mobile prototype app which helps tourists discover new places,
+                  and quickly find the best sightseeing in real-time.
+                </Card.Text>
+                <Button
+                  variant="outline-secondary"
+                  onClick={() => this.onClickFlipCard('flipped')}
+                >
+                  Learn More
+                </Button>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="back">
+            <Card className="projCard">
+              <div
+                className="embed-responsive embed-responsive-16by9 backVideo"
+                variant="top"
+              >
+                <iframe
+                  className="embed-responsive-item"
+                  src="https://www.youtube.com/embed/iLDaRyiGrh8?start=98"
+                  allowFullScreen
+                />
+              </div>
+              <Card.Body className="rbflipbody">
+                <Card.Text>
+                  <ul>
+                    <li>
+                      <b>Features:</b> Location-based Augmented Reality, React
+                      Native Mobile UI, NYSE + Yelp API integrations
+                    </li>
+                    <li>
+                      <b>Key Challenge:</b> Converting GPS coordinates into
+                      local AR space and integrating React Native with Viro AR
+                    </li>
+                    <li>
+                      <b>Technologies:</b> React Native, Redux, ViroReact,
+                      ARKit/Core, Express, Yelp API, Sequelize, PostgreSQL
+                    </li>
+                  </ul>
+                </Card.Text>
+                <Card.Footer className="d-flex flex-row justify-content-between">
+                  <div className="d-flex flex-row">
+                    <Button
+                      variant="outline-secondary"
+                      className="githubButton mr-4"
+                      href="https://github.com/explorAR-group"
+                      target="_blank"
+                    >
+                      <p>Source Code</p>
+                    </Button>
+                    <Button
+                      variant="outline-secondary"
+                      href="https://youtu.be/iLDaRyiGrh8?t=98"
+                      target="_blank"
+                      id="demoButton"
+                    >
+                      Demo
+                    </Button>
+                  </div>
+                  <Button
+                    className="close mb-1 ml-3"
+                    aria-label="Close"
+                    variant="outline-secondary"
+                    onClick={() => this.onClickFlipCard('flipped')}
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </Button>
+                </Card.Footer>
+              </Card.Body>
+            </Card>
+          </div>
+        </div>
+      </div>
+    )
+  }
+}

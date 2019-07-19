@@ -4,26 +4,11 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import ProjectCard from './projectCard'
+import GrungeCart from './grungeCart'
+import ExplorAR from './explorAR'
+import EyeTTT from './eyeTTT'
 
 class Projects extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      card1: false,
-      card2: false,
-      card3: false,
-      card4: false
-    }
-    this.onClickFlipCard = this.onClickFlipCard.bind(this)
-  }
-
-  onClickFlipCard(id) {
-    let newState = {}
-    newState[id] = !this.state[id]
-    this.setState(newState)
-  }
-
   render() {
     return (
       <section id="projects">
@@ -34,27 +19,13 @@ class Projects extends Component {
           <Container>
             <Row>
               <Col lg={6} className="mb-4">
-                <ProjectCard />
+                <ExplorAR />
               </Col>
               <Col lg={6} className="mb-4">
-                <ProjectCard />
+                <GrungeCart />
               </Col>
               <Col lg={6} className="mb-4">
-                <Card className="projCard">
-                  <Card.Img
-                    className="frontImage"
-                    variant="top"
-                    src="images/computerVision.png"
-                  />
-                  <Card.Body>
-                    <Card.Title>EyeTicTacToe</Card.Title>
-                    <Card.Text>
-                      An OpenCV.js experiment. A computer vision focused web app
-                      designed to recognize the board state of a tictactoe game.
-                    </Card.Text>
-                    <Button variant="outline-primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
+                <EyeTTT />
               </Col>
               <Col lg={6} className="mb-4">
                 <Card className="projCard">
