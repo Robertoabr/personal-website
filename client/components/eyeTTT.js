@@ -35,8 +35,8 @@ export default class EyeTTT extends Component {
               <Card.Body className="rbflipbody">
                 <Card.Title>EyeTicTacToe</Card.Title>
                 <Card.Text>
-                  An OpenCV.js experiment. Computer vision web app designed to
-                  recognize board state of tictactoe game.
+                  An experimental computer vision focused webpage designed to
+                  recognize the board state of tictactoe.
                 </Card.Text>
                 <Button
                   variant="outline-secondary"
@@ -52,24 +52,23 @@ export default class EyeTTT extends Component {
               <Card.Img
                 className="backImage"
                 variant="top"
-                src="images/grungeCart1.png"
+                src="images/eyeTTTscreen2.png"
               />
               <Card.Body className="rbflipbody">
                 <Card.Text>
                   <ul>
                     <li>
-                      <b>Features:</b> Stripe Integration, Auth/O-Auth,
-                      Persistent Guest Cart, Backend Data Validations, Full
-                      Testing Suite
+                      <b>Features:</b> Object Detection, Front-end Image
+                      Processing
                     </li>
                     <li>
-                      <b>Key Challenge:</b> Setting up database and auth token
-                      to allow cart history, checkout and order history for both
-                      logged in and anonymous users
+                      <b>Key Challenge:</b> Learning OpenCV image processing
+                      techniques in Python and porting them to javascript to
+                      test OpenCV.js.
                     </li>
                     <li>
-                      <b>Technologies:</b> Open CV, HTML, CSS, Express,
-                      Sequelize, PostgreSQL
+                      <b>Technologies:</b> OpenCV.js, Python, Javascript,
+                      HTML5,CSS3,
                     </li>
                   </ul>
                 </Card.Text>
@@ -82,13 +81,6 @@ export default class EyeTTT extends Component {
                       target="_blank"
                     >
                       <p>Source Code</p>
-                    </Button>
-                    <Button
-                      variant="outline-secondary"
-                      href="https://grunge-cart.herokuapp.com/Products"
-                      target="_blank"
-                    >
-                      Site Link
                     </Button>
                   </div>
                   <Button
