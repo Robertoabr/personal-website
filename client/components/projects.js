@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col'
 import GrungeCart from './grungeCart'
 import ExplorAR from './explorAR'
 import EyeTTT from './eyeTTT'
+import FarFromHome from './farFromHome'
 
 class Projects extends Component {
   render() {
@@ -28,21 +29,7 @@ class Projects extends Component {
                 <EyeTTT />
               </Col>
               <Col lg={6} className="mb-4">
-                <Card className="projCard">
-                  <Card.Img
-                    variant="top"
-                    className="frontImage"
-                    src="images/vr1.jpg"
-                  />
-                  <Card.Body>
-                    <Card.Title>Ethan and the Gentle Giant</Card.Title>
-                    <Card.Text>
-                      Coop VR prototype Game built with Steam VR SDK and Unity.
-                      Leverages VR's ability to instantly change world scale.
-                    </Card.Text>
-                    <Button variant="outline-primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
+                <FarFromHome />
               </Col>
             </Row>
           </Container>

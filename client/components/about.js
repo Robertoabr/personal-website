@@ -43,8 +43,8 @@ const About = () => {
                     helping others and solving complex problems.
                   </Card.Text>
                   <Card.Text className="text-justify">
-                    As a web developer, I enjoy using my attention to detail, my
-                    need to constantly learn, and my love for making things, to
+                    As a web developer, I enjoy using my attention to detail,
+                    need to constantly learn, and love of making things, to
                     create the innovation that drives forward progress in the
                     world.
                   </Card.Text>

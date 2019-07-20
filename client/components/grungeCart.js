@@ -63,9 +63,9 @@ export default class GrungeCart extends Component {
                       Testing Suite
                     </li>
                     <li>
-                      <b>Key Challenge:</b> Setting up database and auth token
-                      to allow cart history, checkout and order history for both
-                      logged in and anonymous users
+                      <b>Key Challenge:</b> Database and auth token setup to
+                      allow cart history, checkout and order history for logged
+                      + anonymous users
                     </li>
                     <li>
                       <b>Technologies:</b> React, Redux, Express, Sequelize,
@@ -73,7 +73,10 @@ export default class GrungeCart extends Component {
                     </li>
                   </ul>
                 </Card.Text>
-                <Card.Footer className="d-flex flex-row justify-content-between">
+                <Card.Footer
+                  className="d-flex flex-row justify-content-between"
+                  bsPrefix="custom-footer"
+                >
                   <div className="d-flex flex-row">
                     <Button
                       variant="outline-secondary"
@@ -81,7 +84,7 @@ export default class GrungeCart extends Component {
                       href="https://github.com/white-toucan/grace-shopper"
                       target="_blank"
                     >
-                      <p>Source Code</p>
+                      Source Code
                     </Button>
                     <Button
                       variant="outline-secondary"

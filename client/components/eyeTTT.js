@@ -72,15 +72,18 @@ export default class EyeTTT extends Component {
                     </li>
                   </ul>
                 </Card.Text>
-                <Card.Footer className="d-flex flex-row justify-content-between">
+                <Card.Footer
+                  bsPrefix="custom-footer"
+                  className="d-flex flex-row justify-content-between"
+                >
                   <div className="d-flex flex-row">
                     <Button
                       variant="outline-secondary"
                       className="githubButton"
-                      href="https://github.com/white-toucan/grace-shopper"
+                      href="https://github.com/Robertoabr/eyeTicTacToe"
                       target="_blank"
                     >
-                      <p>Source Code</p>
+                      Source Code
                     </Button>
                   </div>
                   <Button

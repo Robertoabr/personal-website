@@ -64,7 +64,7 @@ export default class ExplorAR extends Component {
                   <ul>
                     <li>
                       <b>Features:</b> Location-based Augmented Reality, React
-                      Native Mobile UI, NYSE + Yelp API integrations
+                      Native Mobile UI, NYSE/Yelp API integrations
                     </li>
                     <li>
                       <b>Key Challenge:</b> Converting GPS coordinates into
@@ -76,15 +76,18 @@ export default class ExplorAR extends Component {
                     </li>
                   </ul>
                 </Card.Text>
-                <Card.Footer className="d-flex flex-row justify-content-between">
+                <Card.Footer
+                  className="d-flex flex-row justify-content-between"
+                  bsPrefix="custom-footer"
+                >
                   <div className="d-flex flex-row">
                     <Button
                       variant="outline-secondary"
-                      className="githubButton mr-4"
+                      className="githubButton"
                       href="https://github.com/explorAR-group"
                       target="_blank"
                     >
-                      <p>Source Code</p>
+                      Source Code
                     </Button>
                     <Button
                       variant="outline-secondary"
