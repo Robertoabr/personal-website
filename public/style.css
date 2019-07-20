@@ -96,6 +96,7 @@ body {
   min-height: 100vh;
   background-color: rgba(36, 36, 36, 1);
   color: rgba(94, 94, 94, 1);
+  padding-bottom: 10rem;
 }
 
 #projectsHead {
@@ -200,6 +201,21 @@ ul {
   padding-inline-end: 25px;
 }
 
+#footer {
+  font-size: 3rem;
+  background-color: rgba(200, 200, 200, 1);
+}
+
+#footerLinks {
+  font-size: 3rem;
+  background-color: black;
+  height: 10vh;
+}
+
+#contact {
+  border-bottom: 0.06em solid black;
+}
+
 /* min font size & scaling  */
 .front .card-text {
   font-size: calc(2vw + 6px);
@@ -244,9 +260,12 @@ div .btn {
   }
 }
 
-/* hiding the video link at non-mobile video sizes*/
+/* hiding the video link/title at non-mobile video sizes*/
 @media (min-width: 577px) {
   #demoButton {
+    display: none;
+  }
+  .mobile-title {
     display: none;
   }
 }

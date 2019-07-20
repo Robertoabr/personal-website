@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Route} from 'react-router-dom'
-import {Navbar, Projects, Jumbo, About} from './components'
+import {Navbar, Projects, Jumbo, About, Footer} from './components'
 
 /**
  * COMPONENT
@@ -13,6 +13,7 @@ export default class Routes extends Component {
         <Route exact path="/" component={Navbar} />
         <Route exact path="/" component={About} />
         <Route exact path="/" component={Projects} />
+        <Route exact path="/" component={Footer} />
       </div>
     )
   }

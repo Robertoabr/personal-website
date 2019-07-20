@@ -55,6 +55,11 @@ export default class FarFromHome extends Component {
                 src="images/farFromHomeAnim.gif"
               />
               <Card.Body className="rbflipbody">
+                <div className="d-flex flex-row justify-content-center">
+                  <Card.Title className="mobile-title">
+                    Far From Home
+                  </Card.Title>
+                </div>
                 <Card.Text>
                   <ul>
                     <li>

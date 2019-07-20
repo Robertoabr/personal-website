@@ -20,12 +20,11 @@ const About = () => {
             <div className="row no-gutters">
               <div className="col-lg-4">
                 <img
-                  fluid
                   src="images/roberto2.png"
                   className="card-img"
                   style={{
                     objectFit: 'cover',
-                    objectPosition: 'left'
+                    objectPosition: 'top'
                   }}
                 />
               </div>

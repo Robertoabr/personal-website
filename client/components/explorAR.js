@@ -60,6 +60,9 @@ export default class ExplorAR extends Component {
                 />
               </div>
               <Card.Body className="rbflipbody">
+                <div className="d-flex flex-row justify-content-center">
+                  <Card.Title className="mobile-title">ExplorAR</Card.Title>
+                </div>
                 <Card.Text>
                   <ul>
                     <li>

@@ -55,6 +55,9 @@ export default class GrungeCart extends Component {
                 src="images/grungeCart1.png"
               />
               <Card.Body className="rbflipbody">
+                <div className="d-flex flex-row justify-content-center">
+                  <Card.Title className="mobile-title">GrungeCart</Card.Title>
+                </div>
                 <Card.Text>
                   <ul>
                     <li>

@@ -13,7 +13,7 @@ class Projects extends Component {
   render() {
     return (
       <section id="projects">
-        <div className="container-fluid d-flex flex-column align-items-center m-1">
+        <div className="container-fluid d-flex flex-column align-items-center m-1 mb-5">
           <div id="projectsHead">
             <h1 className=" m-8">PROJECTS</h1>
           </div>

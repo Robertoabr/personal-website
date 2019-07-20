@@ -35,8 +35,8 @@ export default class EyeTTT extends Component {
               <Card.Body className="rbflipbody">
                 <Card.Title>EyeTicTacToe</Card.Title>
                 <Card.Text>
-                  An experimental computer vision focused webpage designed to
-                  recognize the board state of tictactoe.
+                  An experiment in computer vision for Javascript. A site
+                  designed to recognize the board state of tictactoe.
                 </Card.Text>
                 <Button
                   variant="outline-secondary"
@@ -55,6 +55,9 @@ export default class EyeTTT extends Component {
                 src="images/eyeTTTscreen2.png"
               />
               <Card.Body className="rbflipbody">
+                <div className="d-flex flex-row justify-content-center">
+                  <Card.Title className="mobile-title">EyeTicTacToe</Card.Title>
+                </div>
                 <Card.Text>
                   <ul>
                     <li>
