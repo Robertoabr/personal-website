@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button'
 
 const Jumbo = () => {
   return (
-    <section id="home">
+    <section id="top">
       <Jumbotron fluid>
         <div className="intro">
           <h2>

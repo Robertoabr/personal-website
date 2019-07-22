@@ -60,7 +60,7 @@ export default class FarFromHome extends Component {
                     Far From Home
                   </Card.Title>
                 </div>
-                <Card.Text>
+                <div className="card-text">
                   <ul>
                     <li>
                       <b>Features:</b> Custom physics, hand-drawn art, original
@@ -76,7 +76,7 @@ export default class FarFromHome extends Component {
                       Illustrator
                     </li>
                   </ul>
-                </Card.Text>
+                </div>
                 <Card.Footer
                   className="d-flex flex-row justify-content-between"
                   style={{backgroundColor: 'none'}}

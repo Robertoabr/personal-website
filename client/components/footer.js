@@ -7,11 +7,11 @@ import Button from 'react-bootstrap/Button'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faLinkedin, faGithubSquare} from '@fortawesome/free-brands-svg-icons'
-import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import {faAngleDoubleUp} from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
   return (
-    <section id="footer">
+    <section id="contact">
       <div style={{height: '15vh'}}>
         <div id="svg-container" style={{width: '100%', height: '100%'}}>
           <svg
@@ -25,48 +25,73 @@ const Footer = () => {
           </svg>
         </div>
       </div>
-      <div className="m-5">
+      <div className="mt-5">
         <Container className="d-flex flex-column align-items-center">
           <div>
-            <h1 id="contact">CONTACT</h1>
+            <h1 id="contactHeader">CONTACT</h1>
           </div>
-          <Form>
+          <Form
+            id="contactform"
+            action="//formspree.io/58wfb@boun.cr"
+            method="POST"
+          >
+            <Form.Group controlId="formName">
+              <Form.Control
+                required
+                type="text"
+                placeholder="Your Name"
+                name="name"
+              />
+            </Form.Group>
             <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
+              <Form.Control
+                required
+                type="email"
+                placeholder="Your Email Address"
+                name="_replyto"
+              />
             </Form.Group>
-
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+            <Form.Group>
+              <Form.Control
+                required
+                as="textarea"
+                rows="5"
+                placeholder="Your Message"
+                name="message"
+                id="message"
+              />
             </Form.Group>
-            <Form.Group controlId="formBasicChecbox">
-              <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+            <div className="d-flex flex-row justify-content-center">
+              <Button
+                variant="outline-primary"
+                type="submit"
+                size="lg"
+                style={{borderWidth: '0.15rem'}}
+              >
+                Submit
+              </Button>
+            </div>
           </Form>
         </Container>
       </div>
-      <div id="footerLinks">
-        <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-          <ul className="list-unstyled list-inline social text-center">
-            <li className="list-inline-item">
-              <a href="https://www.linkedin.com/in/robertobrillembourg/">
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="https://github.com/Robertoabr">
-                <FontAwesomeIcon icon={faGithubSquare} />
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div id="toTopArrow" className="d-flex flex-row justify-content-center">
+        <Button variant="outline-light" href="#top">
+          <FontAwesomeIcon icon={faAngleDoubleUp} />
+        </Button>
+      </div>
+      <div id="footerLinks" className="d-flex justify-content-center">
+        <ul className="list-unstyled list-inline social text-center">
+          <li className="list-inline-item">
+            <a href="https://www.linkedin.com/in/robertobrillembourg/">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </li>
+          <li className="list-inline-item">
+            <a href="https://github.com/Robertoabr">
+              <FontAwesomeIcon icon={faGithubSquare} />
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   )

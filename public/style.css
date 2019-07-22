@@ -69,6 +69,11 @@ body {
   border-width: 0.09em;
 }
 
+#aboutCard {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 #aboutSection {
   display: flex;
   flex-direction: column;
@@ -79,24 +84,25 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  background-color: rgba(200, 200, 200, 1);
 }
 
 #aboutHeader {
   margin: 5vh;
   margin-top: 17vh;
-  border-bottom: 0.13em solid rgba(94, 94, 94, 1);
+  border-bottom: 0.13em solid black;
   font-size: calc(16px + 3vmin);
+  color: black;
 }
 
 #projects {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 2em; */
   min-height: 100vh;
   background-color: rgba(36, 36, 36, 1);
   color: rgba(94, 94, 94, 1);
-  padding-bottom: 10rem;
+  padding-bottom: 8rem;
 }
 
 #projectsHead {
@@ -196,24 +202,64 @@ h1 {
   font-size: calc(0.5vw + 10px);
 }
 
-ul {
+.back ul {
   padding-inline-start: 25px;
   padding-inline-end: 25px;
 }
 
-#footer {
-  font-size: 3rem;
+#contact {
   background-color: rgba(200, 200, 200, 1);
 }
 
 #footerLinks {
-  font-size: 3rem;
+  font-size: 4rem;
   background-color: black;
-  height: 10vh;
+  height: 11vh;
 }
 
-#contact {
+.social .list-inline-item {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+#contactHeader {
   border-bottom: 0.06em solid black;
+  margin-bottom: 3.5rem;
+}
+
+#contactform {
+  width: 25vw;
+  min-width: 18rem;
+}
+
+.downArrow .btn-outline-light {
+  font-size: calc(16px + 3vmin);
+  color: rgba(94, 94, 94, 1);
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.downArrow2 .btn-outline-light {
+  font-size: calc(16px + 3vmin);
+  color: rgba(94, 94, 94, 1);
+  border: none;
+  margin-top: 1rem;
+}
+
+div .btn {
+  font-size: calc(0.5vw + 8px);
+  margin-bottom: 0;
+}
+
+#toTopArrow .btn-outline-light {
+  font-size: calc(16px + 3vmin);
+  color: rgba(94, 94, 94, 1);
+  border: none;
+}
+
+#toTopArrow {
+  margin-bottom: 0.5rem !important;
+  margin-top: 2.5rem;
 }
 
 /* min font size & scaling  */
@@ -228,9 +274,15 @@ ul {
   overflow-wrap: break-word;
 }
 
-div .btn {
-  font-size: calc(0.5vw + 8px);
-  margin-bottom: 0;
+/* ExplorARs text is too long for the medium-sm sizes need to scall it differently than the others */
+@media (max-width: 992px) {
+  .explorARbackText li {
+    font-size: calc(0.05vw + 13px);
+  }
+  #explorARul {
+    padding-inline-end: 0 !important;
+    padding-inline-start: 10px !important;
+  }
 }
 
 /* behavior for xs+sm screens */
@@ -257,6 +309,24 @@ div .btn {
   .back .card-text {
     font-size: calc(1.5vw + 8px);
     overflow-wrap: break-word;
+  }
+
+  #grungeBackText li {
+    font-size: calc(1.2vw + 8px);
+  }
+
+  #footerLinks {
+    font-size: 2.5rem;
+    height: 10vh;
+  }
+
+  .back ul {
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+  }
+
+  .back li {
+    margin-bottom: 0.3rem;
   }
 }
 
@@ -285,6 +355,10 @@ div .btn {
     font-size: 26px;
   }
   .back .card-text {
+    font-size: 18px;
+  }
+
+  .back #grungeBackText {
     font-size: 18px;
   }
 

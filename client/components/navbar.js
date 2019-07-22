@@ -8,7 +8,7 @@ export default class Navigation extends Component {
   render() {
     return (
       <Navbar id="rbnav" sticky="top" bg="dark" variant="dark" expand="sm">
-        <Navbar.Brand id="RB" href="#home">
+        <Navbar.Brand id="RB" href="#top">
           RB
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -16,7 +16,7 @@ export default class Navigation extends Component {
           <Nav className="mr-auto">
             <Nav.Link href="#about">ABOUT</Nav.Link>
             <Nav.Link href="#projects">PROJECTS</Nav.Link>
-            <Nav.Link href="#Blog">WRITING</Nav.Link>
+            <Nav.Link href="#contact">CONTACT</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

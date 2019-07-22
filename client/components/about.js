@@ -1,6 +1,9 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
   return (
@@ -29,7 +32,7 @@ const About = () => {
                 />
               </div>
               <div className="col-lg-8">
-                <div className="card-body">
+                <div className="card-body" id="aboutCard">
                   <h4 className="card-title">
                     <b>My Journey</b>
                   </h4>
@@ -38,8 +41,7 @@ const About = () => {
                     My professional path has shifted from analyzing consumer
                     behavior to building useful and accessible software for
                     consumers, but I've always had a laser focus on the end
-                    user, and I have never stopped engaging my passion for
-                    helping others and solving complex problems.
+                    user.
                   </Card.Text>
                   <Card.Text className="text-justify">
                     As a web developer, I enjoy using my attention to detail,
@@ -51,6 +53,11 @@ const About = () => {
               </div>
             </div>
           </Card>
+        </div>
+        <div className="downArrow">
+          <Button variant="outline-light" href="#projects">
+            <FontAwesomeIcon icon={faChevronDown} />
+          </Button>
         </div>
       </Container>
     </section>

@@ -36,7 +36,7 @@ export default class EyeTTT extends Component {
                 <Card.Title>EyeTicTacToe</Card.Title>
                 <Card.Text>
                   An experiment in computer vision for Javascript. A site
-                  designed to recognize the board state of tictactoe.
+                  designed to recognize the board state of TicTacToe.
                 </Card.Text>
                 <Button
                   variant="outline-secondary"
@@ -53,12 +53,13 @@ export default class EyeTTT extends Component {
                 className="backImage"
                 variant="top"
                 src="images/eyeTTTscreen2.png"
+                style={{borderBottom: '.05rem solid rgba(94, 94, 94, .2)'}}
               />
               <Card.Body className="rbflipbody">
                 <div className="d-flex flex-row justify-content-center">
                   <Card.Title className="mobile-title">EyeTicTacToe</Card.Title>
                 </div>
-                <Card.Text>
+                <div className="card-text">
                   <ul>
                     <li>
                       <b>Features:</b> Object Detection, Front-end Image
@@ -74,7 +75,7 @@ export default class EyeTTT extends Component {
                       HTML5,CSS3,
                     </li>
                   </ul>
-                </Card.Text>
+                </div>
                 <Card.Footer
                   bsPrefix="custom-footer"
                   className="d-flex flex-row justify-content-between"

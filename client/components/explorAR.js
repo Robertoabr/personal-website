@@ -15,6 +15,9 @@ export default class ExplorAR extends Component {
     let newState = {}
     newState[id] = !this.state[id]
     this.setState(newState)
+    var frame = document.getElementsByClassName('explorARvideo')[0]
+    frame.src = ''
+    frame.src = 'https://www.youtube.com/embed/iLDaRyiGrh8?start=98'
   }
 
   render() {
@@ -54,17 +57,17 @@ export default class ExplorAR extends Component {
                 variant="top"
               >
                 <iframe
-                  className="embed-responsive-item"
+                  className="embed-responsive-item explorARvideo"
                   src="https://www.youtube.com/embed/iLDaRyiGrh8?start=98"
                   allowFullScreen
                 />
               </div>
-              <Card.Body className="rbflipbody">
+              <Card.Body className="rbflipbody explorARbackbody">
                 <div className="d-flex flex-row justify-content-center">
                   <Card.Title className="mobile-title">ExplorAR</Card.Title>
                 </div>
-                <Card.Text>
-                  <ul>
+                <div className="card-text explorARbackText">
+                  <ul id="explorARul">
                     <li>
                       <b>Features:</b> Location-based Augmented Reality, React
                       Native Mobile UI, NYSE/Yelp API integrations
@@ -78,7 +81,7 @@ export default class ExplorAR extends Component {
                       ARKit/Core, Express, Yelp API, Sequelize, PostgreSQL
                     </li>
                   </ul>
-                </Card.Text>
+                </div>
                 <Card.Footer
                   className="d-flex flex-row justify-content-between"
                   bsPrefix="custom-footer"
@@ -94,7 +97,7 @@ export default class ExplorAR extends Component {
                     </Button>
                     <Button
                       variant="outline-secondary"
-                      href="https://youtu.be/iLDaRyiGrh8?t=98"
+                      href="https://youtu.be/iLDaRyiGrh8?start=98?enablejsapi=1"
                       target="_blank"
                       id="demoButton"
                     >

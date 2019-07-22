@@ -8,6 +8,8 @@ import GrungeCart from './grungeCart'
 import ExplorAR from './explorAR'
 import EyeTTT from './eyeTTT'
 import FarFromHome from './farFromHome'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
 
 class Projects extends Component {
   render() {
@@ -33,6 +35,11 @@ class Projects extends Component {
               </Col>
             </Row>
           </Container>
+        </div>
+        <div className="downArrow2">
+          <Button variant="outline-light" href="#contact">
+            <FontAwesomeIcon icon={faChevronDown} />
+          </Button>
         </div>
       </section>
     )

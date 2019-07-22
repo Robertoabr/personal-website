@@ -58,7 +58,7 @@ export default class GrungeCart extends Component {
                 <div className="d-flex flex-row justify-content-center">
                   <Card.Title className="mobile-title">GrungeCart</Card.Title>
                 </div>
-                <Card.Text>
+                <div id="grungeBackText">
                   <ul>
                     <li>
                       <b>Features:</b> Stripe Integration, Auth/O-Auth,
@@ -75,7 +75,7 @@ export default class GrungeCart extends Component {
                       PostgreSQL, Mocha Chai Enzyme
                     </li>
                   </ul>
-                </Card.Text>
+                </div>
                 <Card.Footer
                   className="d-flex flex-row justify-content-between"
                   bsPrefix="custom-footer"
