@@ -86,6 +86,7 @@ export default class EyeTTT extends Component {
                       className="githubButton"
                       href="https://github.com/Robertoabr/eyeTicTacToe"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Source Code
                     </Button>

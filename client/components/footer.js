@@ -82,12 +82,20 @@ const Footer = () => {
       <div id="footerLinks" className="d-flex justify-content-center">
         <ul className="list-unstyled list-inline social text-center">
           <li className="list-inline-item">
-            <a href="https://www.linkedin.com/in/robertobrillembourg/">
+            <a
+              href="https://www.linkedin.com/in/robertobrillembourg/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>
           <li className="list-inline-item">
-            <a href="https://github.com/Robertoabr">
+            <a
+              href="https://github.com/Robertoabr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faGithubSquare} />
             </a>
           </li>

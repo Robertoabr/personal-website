@@ -87,6 +87,7 @@ export default class FarFromHome extends Component {
                       variant="outline-secondary"
                       className="githubButton"
                       href="https://ggj.s3.amazonaws.com/games/2019/01/247774/src/wHwzU/FFH%20FF.zip"
+                      rel="noopener noreferrer"
                     >
                       PC Download
                     </Button>
@@ -95,6 +96,7 @@ export default class FarFromHome extends Component {
                       href="https://globalgamejam.org/2019/games/far-home-4
                       "
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       GGJ Site
                     </Button>

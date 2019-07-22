@@ -86,6 +86,7 @@ export default class GrungeCart extends Component {
                       className="githubButton"
                       href="https://github.com/white-toucan/grace-shopper"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Source Code
                     </Button>
@@ -93,6 +94,7 @@ export default class GrungeCart extends Component {
                       variant="outline-secondary"
                       href="https://grunge-cart.herokuapp.com/Products"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Site Link
                     </Button>

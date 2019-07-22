@@ -92,6 +92,7 @@ export default class ExplorAR extends Component {
                       className="githubButton"
                       href="https://github.com/explorAR-group"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Source Code
                     </Button>
@@ -99,6 +100,7 @@ export default class ExplorAR extends Component {
                       variant="outline-secondary"
                       href="https://youtu.be/iLDaRyiGrh8?start=98?enablejsapi=1"
                       target="_blank"
+                      rel="noopener noreferrer"
                       id="demoButton"
                     >
                       Demo
