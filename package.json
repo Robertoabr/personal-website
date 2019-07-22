@@ -1,7 +1,8 @@
 {
   "name": "roberto-personal-website",
   "version": "2.0.0",
-  "description": "Roberto Brillembourg portfolio site",
+  "description": "Roberto Brillembourg Portfolio Site",
+  "homepage": "https://Robertoabr.github.io/roberto-brillembourg",
   "engines": {
     "node": ">= 7.0.0"
   },
@@ -20,7 +21,9 @@
     "start": "node server",
     "start-dev": "NODE_ENV='development' npm run build-client-watch & NODE_ENV='development' npm run start-server",
     "start-server": "nodemon server -e html,js,scss --ignore public --ignore client",
-    "test": "NODE_ENV='test' mocha \"./server/**/*.spec.js\" \"./client/**/*.spec.js\" \"./script/**/*.spec.js\" --require @babel/polyfill --require @babel/register"
+    "test": "NODE_ENV='test' mocha \"./server/**/*.spec.js\" \"./client/**/*.spec.js\" \"./script/**/*.spec.js\" --require @babel/polyfill --require @babel/register",
+    "ghpredeploy": "npm run build",
+ "ghdeploy": "gh-pages -d build"
   },
   "husky": {
     "hooks": {
@@ -51,6 +54,7 @@
     "connect-session-sequelize": "^6.0.0",
     "express": "^4.16.4",
     "express-session": "^1.15.1",
+    "gh-pages": "^2.0.1",
     "history": "^4.9.0",
     "morgan": "^1.9.1",
     "passport": "^0.4.0",
